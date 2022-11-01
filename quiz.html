@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play</title>
+    <link rel="stylesheet" href="quiz.css">
+  </head>
+  <body>
+    <div class="play">
+      <h3 class="title">Let's Play</h3>
+      <!-- <p class="instruction">
+        Be carefull, read the question and the instructions for each question.
+      </p>
+      <p class="instruction">Good Luck!</p>
+    </div>-->
+    <form name="quiz" id="quiz">
+      <div class="question">
+        <p class="instruction">
+          1 Choose only one option (<em>which do you think it is true</em>)
+        </p>
+        <h5>Chelsea won the Champions League 2020-2021</h5>
+        <p><input type="radio" name="question1" value="True" />True</p>
+        <p><input type="radio" name="question1" value="False" />False</p>
+      </div>
+      <div class="question">
+        <h5>2 INTER won the Champions League 2009-2010</h5>
+        <p><input type="radio" name="question2" value="True" />True</p>
+        <p><input type="radio" name="question2" value="False" />False</p>
+      </div>
+      <div class="question">
+        <h5>3 Karim Benzema won the Ballon d'Or 2019</h5>
+        <p><input type="radio" name="question3" value="True" />True</p>
+        <p><input type="radio" name="question3" value="False" />False</p>
+      </div>
+      <div class="question">
+       
+        <h5>4 Real Madrid won the Champions League 2021-2022</h5>
+        <p><input type="radio" name="question4" value="True" />True</p>
+        <p><input type="radio" name="question4" value="False" />False</p>
+      </div>
+      <div class="question">
+        
+        <h5>5 Milan won Champions League 10 times</h5>
+        <p><input type="radio" name="question5" value="True" />True</p>
+        <p><input type="radio" name="question5" value="False" />False</p>
+      </div>
+      <div class="question">
+        <p class="instruction">
+         You can choose more than 1 option
+        </p>
+        <h5>6 Which of the players is part of Inter team?</h5>
+        <p>
+          <input type="checkbox" name="question6" value="Romelu Lukaku" />Romelu
+          Lukaku
+        </p>
+        <p>
+          <input
+            type="checkbox"
+            name="question6"
+            value="Cristiano
+          Ronaldo"
+          />Cristiano Ronaldo
+        </p>
+        <p>
+          <input type="checkbox" name="question6" value="Milan Skriniar" />Milan
+          Skriniar
+        </p>
+        <p>
+          <input
+            type="checkbox"
+            name="question6"
+            value="NIcolo Barella"
+          />NIcolo Barella
+        </p>
+      </div>
+      <div class="question">
+        
+        <h5>7 Inter's coach is...?</h5>
+        <p>
+          <input
+            type="checkbox"
+            name="question7"
+            value="Simone Inzaghi"
+          />Simone Inzaghi
+        </p>
+        <p>
+          <input
+            type="checkbox"
+            name="question7"
+            value="Antonio Conte"
+          />Antonio Conte
+        </p>
+        <p>
+          <input type="checkbox" name="question7" value="Jose Muourinho" />Jose
+          Muourinho
+        </p>
+        <p>
+          <input
+            type="checkbox"
+            name="question7"
+            value="Stefano Pioli"
+          />Stefano Pioli
+        </p>
+      </div>
+      <div class="question">
+    
+        <h5>8 2021-2022 serie A Winner was...?</h5>
+        <p>
+          <input type="checkbox" name="question8" value="Juventus" />Juventus
+        </p>
+        <p><input type="checkbox" name="question8" value="Milan" />Milan</p>
+        <p><input type="checkbox" name="question8" value="Inter" />Inter</p>
+        <p><input type="checkbox" name="question8" value="Napoli" />Napoli</p>
+        <p><input type="checkbox" name="question8" value="Lazio" />Lazio</p>
+      </div>
+      <input
+        type="button"
+        name=""
+        value="I am done!"
+        id="button"
+        onclick="check()"
+      />
+    </form>
+    <p id="result"></p>
+    <script src="quiz.js"></script>
+  </body>
+</html>

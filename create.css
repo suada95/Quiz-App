@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Blinker&family=Roboto:wght@500&family=Zen+Antique+Soft&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f6f6c9;
+}
+p,
+em,
+h4 {
+  font-family: Roboto;
+  color: #153462;
+}
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.quizcard {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 3rem;
+  border-radius: 2%;
+  line-height: 1.5rem;
+}
+.quiztitle {
+  text-align: center;
+}
+.answercard {
+  display: grid;
+  grid-column: auto;
+  gap: 20px;
+  grid-template-columns: 4fr;
+}
+input {
+  background-color: #ffffff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+.questions {
+  padding: 1rem;
+  box-shadow: 2px 5px 2px 5px #fad6a5;
+  border-radius: 2%;
+}
+.questions:hover {
+  transition: 0.3s;
+  padding: 2rem;
+  box-shadow: 5px 10px 5px 10px #fad6a5;
+}
+/* input:hover {
+  cursor: hover;
+  background-color: #bacce6;
+  cursor: pointer;
+  transition: 0.5s;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+} */
+.chooseradio:hover {
+  cursor: pointer;
+}
+button {
+  background-color: #8bbccc;
+  font-family: Blinker;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  border-radius: 5px;
+  border: transparent;
+}
+button:hover {
+  background-color: #153462;
+  color: white;
+}
+.back {
+  position: fixed;
+  bottom: 5%;
+  right: 10%;
+  background-color: grey;
+  font-family: robot;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 15%;
+  color: white;
+  cursor: pointer;
+}
+.back:hover {
+  background-color: #153462;
+}

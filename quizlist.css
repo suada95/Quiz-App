@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Blinker&family=Roboto:wght@500&family=Zen+Antique+Soft&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  font-family: Roboto;
+  color: #153462;
+  font-size: 2rem;
+}
+.quizzeslist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+li {
+  list-style: none;
+  cursor: pointer;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  margin-top: 3rem;
+}
+.listelement {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  padding: 2.5rem;
+  background-color: #fff5e4;
+  font-family: blinker;
+  font-size: 1.2rem;
+  color: #153462;
+  border-radius: 5%;
+  box-shadow: 2px 5px #c98474;
+}
+.toplist {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.middlelist {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.bottomlist {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.btn {
+  background-color: #c98474;
+  font-family: robot;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 20%;
+  color: white;
+  margin-top: 20%;
+  cursor: pointer;
+}
+.fa {
+  font-size: 1.3rem;
+  padding-left: 1rem;
+}
+.delete {
+  position: relative;
+  background-color: #fff5e4;
+  color: #153462;
+  border: none;
+  cursor: pointer;
+}
+.back {
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  background-color: grey;
+  font-family: robot;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 15%;
+  color: white;
+  cursor: pointer;
+}
+
+.share-btn {
+  position: relative;
+  border: none;
+  background-color: #fff5e4;
+  color: #153462;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  padding-top: 2.5px;
+  padding-right: 3px;
+  cursor: pointer;
+}
+
+.share-options {
+  position: absolute;
+  bottom: 65%;
+  left: 20%;
+  width: auto;
+  height: auto;
+  transform-origin: bottom left;
+  transform: scale(0);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: rgba(15, 15, 15, 0.2);
+  color: #fff;
+  padding: 20px;
+  font-family: "roboto";
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+.choose {
+  position: absolute;
+  z-index: 2;
+  padding: 3rem 3rem;
+  width: auto;
+  height: auto;
+  background-color: #eeeeee;
+  color: black;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+  border-radius: 5%;
+  font-family: "blinker";
+  display: none;
+}
+.chooseOne {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  padding-top: 1rem;
+}
+.yes-btn {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  background-color: #82cd47;
+}
+.yes-btn:hover {
+  background-color: #379237;
+}
+.no-btn {
+  background-color: #fa9494;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 50%;
+  color: white;
+}
+.no-btn:hover {
+  background-color: #eb1d36;
+}
+.share-options.active {
+  transform: scale(1);
+  transition-delay: 0s;
+}
+
+.title {
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0s;
+  font-size: 20px;
+  text-transform: capitalize;
+  border-bottom: 1px solid #fff;
+  width: fit-content;
+  padding: 0 20px 3px 0;
+}
+
+.social-media {
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0s;
+  width: 250px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.social-media-btn {
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  line-height: 50px;
+  font-size: 25px;
+  cursor: pointer;
+  margin: 0 5px;
+  text-align: center;
+}
+
+.social-media-btn:nth-child(1) {
+  background: #ffa654;
+}
+
+.social-media-btn:nth-child(2) {
+  background: #25d366;
+}
+
+.social-media-btn:nth-child(3) {
+  background: #e4405f;
+}
+
+.social-media-btn:nth-child(4) {
+  background: #1da1f2;
+}
+
+.social-media-btn:nth-child(5) {
+  background: #1877f2;
+}
+
+.social-media-btn:nth-child(6) {
+  background: #0a66c2;
+}
+
+.share-options.active .title,
+.share-options.active .social-media {
+  opacity: 1;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 1rem;
+  }
+  .choose {
+    margin-left: -17rem;
+  }
+  .back {
+    position: fixed;
+    bottom: 5%;
+    left: 5%;
+  }
+}
